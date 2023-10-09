@@ -12,13 +12,16 @@ while n < 4:
 while condition < 4:
     condition = int(input("โปรดระบุทางเลือกในการดำเนินการกับคิววงกลม\n1. เพิ่มข้อมูลตัวเลขจํานวนเต็มในคิววงกลม\n2. ลบข้อมูลที่จัดเก็บในคิววงกลม 1 ตัว\n3. แสดงตัวเลขจํานวนเต็มที่เป็นเลขคู่ที่จัดเก็บในคิววงกลมทางจอภาพ\nทางเลือกในการดำเนินการ : "))
     if condition == 1:
+            pass
         if len(list) !=  n:
             list.append(appendQueue())
+            rear += 1
         else:
             print("เพิ่มข้อมูลไม่ได้เนื่องจากคิวเต็ม")
     if condition == 2 :
         if len(list) != 0:
             list.pop(0)
+            front = n-1
         else:
             print("ลบข้อมูลไม่ได้เพราะคิววงกลมว่าง")
     if condition == 3:
