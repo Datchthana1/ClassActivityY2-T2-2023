@@ -19,7 +19,7 @@ class SLinkList:
             self.tail = NewNode
        
     def AtTheEnd(self,data):
-        if self.tail == None:
+        if self.head == None:
             NewNode = Node(data)
             NewNode.next = None
             self.head = NewNode
