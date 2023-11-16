@@ -3,7 +3,6 @@ class Node:
         self.data = None
         self.leftChild = None
         self.rightChild = None
-
     def insert(self,data):
         self.data = data  
         data = int(input(f"โปรดป้อนหมายเลชของโหมด Left child ของ {self.data} (ถ้าไม่มีให้ป้อน : -1234) : "))
@@ -14,21 +13,18 @@ class Node:
         self.rightChild = Node()
         if data != -1234:
             self.rightChild.insert(data)
-
     def PreOrder(self, tree):  
         if tree:
             if (tree.data != None) and (tree.data %3 == 0):
                 print(tree.data,end=' ')
             self.PreOrder(tree.leftChild)
             self.PreOrder(tree.rightChild)
-                 
     def InOrder(self, tree):
         if tree:
             self.InOrder(tree.leftChild)
             if (tree.data != None) and (tree.data > 20):
                 print(tree.data,end=' ')
             self.InOrder(tree.rightChild)
-           
     def PostOrder(self, tree):
         if tree:
             self.PostOrder(tree.leftChild)        

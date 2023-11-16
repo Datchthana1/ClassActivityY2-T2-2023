@@ -1,7 +1,7 @@
 SOS = 0
 Stack = []
 while SOS < 5 :
- SOS = int(input("Size of Stack : "))
+    SOS = int(input("Size of Stack : "))
 while len(Stack) != SOS+1:
     Conditions = int(input("โปรดระบุทงเลือกในการดำเนินการ \n 1. เพิ่มข้อมูลใน Stack \n 2. ลบข้อมูลที่จัดเก็บในตําแหน่งบนสุดของ Stack \n 3. แสดงข้อมูลที่จัดเก็บในตําแหน่งบนสุดของ Stack ทางจอภาพ \n 4. แสดงข้อมูลทั้งหมดที่จัดเก็บใน Stack ทางจอภาพ \n 5. แสดงคำมากที่สุดและค่าน้อยที่สุดของข้อมูลที่จัดเก็บใน Stack ทางจอภาพ \n : "))
     print(f"ทางเลือกในการดำเนินการ = {Conditions}")
